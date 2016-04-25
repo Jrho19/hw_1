@@ -6,17 +6,17 @@ tip_percent = gets.to_f
 puts "How many people are at your table?"
 table_amt = gets.to_f
 
-class Numeric
+class Calculation
   def percent_of(n)
     self.to_f / n.to_f * 100.0
   end
 end
 puts "tip amoutn: #{tip_percent}"
 
-tip_ans = (((tip_percent).percent_of(bill) + bill)/ table_amt).round(2)
+tip_total = (((tip_percent).percent_of(bill) + bill)/ table_amt).round(2)
 
 
-p "Your portion of the total bill is $#{tip_ans}!"
+p "Your portion of the total bill is $#{tip_total}!"
 
 # puts "The bill is $#{bill}"
 # bill = bill.to_f.round(2)
