@@ -3,7 +3,7 @@ bill = gets.to_f
 puts "What percentage would you like to tip?"
 puts "10%? 15%? Or 20%?"
 tip_percent = gets.to_f
-puts "How many people are at your table?"
+puts "How many guys are at your table?"
 table_amt = gets.to_f
 
 class Calculation
